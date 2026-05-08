@@ -17,6 +17,7 @@ import {
 import Index from "./pages/Index";
 import Dashboard from "./pages/Dashboard";
 import NotFound from "./pages/NotFound";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import {
   Sidebar,
   SidebarContent,
@@ -158,6 +159,7 @@ const App = () => {
             <Route path="/" element={<Index />} />
             <Route element={<AppChrome />}>
               <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             </Route>
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
